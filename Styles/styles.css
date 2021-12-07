@@ -5,6 +5,8 @@
     font-family: Helvetica, sans-serif;
 }
 
+/*Navbar brand*/
+
 .navbar{
     background-color: #f2f3f4;
 }
@@ -17,4 +19,38 @@ li a:hover, #cotiza-aqui-navbar{
     color: black;
     background-color: #fcdc14;
     border-radius: 4px;
+}
+
+a.navbar-brand{
+    color: black;
+}
+
+/*Página 1*/
+
+#pagina1{
+    background-color: #f2f3f4;
+}
+
+.texto-pagina-1{
+    padding-top: 50px;
+}
+
+.btn-cotiza-aqui, .btn-como-funcionamos{
+    border: black 1px solid;
+    border-radius: 4px;
+}
+
+.btn-cotiza-aqui:hover, .btn-como-funcionamos:hover{
+    background-color: #fcdc14;
+    border: none;
+    border: #f2f3f4 1px solid;
+}
+
+/*Nuestros numeros*/
+#nuestros-numeros-1, .card{
+    background-color: #fcdc14;
+}
+
+#algunos-numeros{
+    padding-top: 50px;
 }
