@@ -54,3 +54,22 @@ a.navbar-brand{
 #algunos-numeros{
     padding-top: 50px;
 }
+
+.card{
+    border: #fcdc14 0px solid;
+}
+
+.btn-nn{
+border: black 1px solid;
+border-radius: 4px;
+background-color: #f2f3f4;
+}
+
+.btn-nn:hover{background-color: #fcdc14;
+    border: none;
+    border: #fcdc14 1px solid;
+}
+
+div.card-deck{
+    padding-bottom: 40px;
+}
