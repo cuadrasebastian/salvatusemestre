@@ -16,6 +16,13 @@ h1{
 }
 
 /*Navbar brand*/
+
+.active-nav{
+    color: black;
+    background-color: #fcdc14;
+    border-radius: 4px;
+}
+
 .navbar-brand{
     font-weight: 400;
 }
@@ -58,6 +65,11 @@ a.dropdown-item:hover{
     background-color: #fcdc14;
 }
 
+.navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 6px;
+}
+
 /*Página 1*/
 
 
@@ -84,7 +96,7 @@ a.dropdown-item:hover{
 
 
 /*Nuestros numeros*/
-#nuestros-numeros-1, .card{
+#nuestros-numeros-1, .card-nuestros-numeros{
     background-color: #fcdc14;
 }
 
@@ -176,4 +188,24 @@ a{
 
 .fa-instagram:hover{
     color: black;
+}
+
+/*Blog*/
+
+#blog{
+    background-color: #f2f3f4;
+}
+
+div#blog-dentro{
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+.box{
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card-blog{
+    background-color: #f2f3f4;
 }
