@@ -1,11 +1,24 @@
 /*colores: #f2f3f4 plomo
 #fcdc14 amarillo*/
 
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&display=swap');
+
 *{
-    font-family: Helvetica, sans-serif;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+h1{
+    font-weight: 400;
+}
+
+.nav-link-300, p{
+    font-weight: 300;
 }
 
 /*Navbar brand*/
+.navbar-brand{
+    font-weight: 400;
+}
 
 .navbar{
     background-color: #f2f3f4;
@@ -21,14 +34,36 @@ li a:hover, #cotiza-aqui-navbar{
     border-radius: 4px;
 }
 
+#cotiza-aqui-navbar{
+    font-weight: 400;
+}
+
 a.navbar-brand{
     color: black;
+}
+
+#cotiza-aqui-navbar{
+    font-weight: 400;
+}
+
+div.dropdown-menu.show{
+    background-color: #f2f3f4;
+}
+
+a.dropdown-item{
+    font-weight: 300;
+}
+
+a.dropdown-item:hover{
+    background-color: #fcdc14;
 }
 
 /*Página 1*/
 
 #pagina1{
     background-color: #f2f3f4;
+    padding-top: 20px;
+    padding-bottom: 30px;
 }
 
 .texto-pagina-1{
@@ -36,7 +71,7 @@ a.navbar-brand{
 }
 
 .btn-cotiza-aqui, .btn-como-funcionamos{
-    border: black 1px solid;
+    border: rgb(0, 0, 0) 1px solid;
     border-radius: 4px;
 }
 
@@ -45,6 +80,7 @@ a.navbar-brand{
     border: none;
     border: #f2f3f4 1px solid;
 }
+
 
 /*Nuestros numeros*/
 #nuestros-numeros-1, .card{
@@ -67,9 +103,76 @@ background-color: #f2f3f4;
 
 .btn-nn:hover{background-color: #fcdc14;
     border: none;
-    border: #fcdc14 1px solid;
+    border: #f2f3f4 1px solid;
 }
 
 div.card-deck{
     padding-bottom: 40px;
+}
+
+/*Como trabajamos*/
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #000;
+    background-color: #fcdc14;
+}
+
+#como-funcionamos-1{
+    background-color: #f2f3f4;
+}
+
+/*Formulario*/
+.formulario-cotizar{
+    background-color: #fcdc14;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.botonEnviar, .btn-cerrar{
+    border: black 1px solid;
+    border-radius: 4px;
+    background-color: #f2f3f4;
+}
+
+.btn-cerrar:hover, .botonEnviar:hover{
+    background-color: #fcdc14;
+    border: none;
+    border: #f2f3f4 1px solid;
+}
+
+.modal-content{
+    background-color: #f2f3f4;
+}
+
+div.botonenviarcontainer{
+    padding-left: 0px;
+}
+
+
+
+/*Footer*/
+
+.footer{
+    background-color: #f2f3f4;
+}
+#footer{
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+
+a{
+    color:#000;
+}
+
+.link-footer{
+    font-weight: 300;
+}
+
+.link-footer:hover{
+    background-color: #fcdc14;
+    color: black;
+    text-decoration: none;
+}
+
+.fa-instagram:hover{
+    color: black;
 }
