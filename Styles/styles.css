@@ -59,6 +59,10 @@ a.dropdown-item:hover{
 }
 
 /*Página 1*/
+@media (min-width: 768px)
+.imagen-pagina-1{
+    visibility: hidden;
+}
 
 #pagina1{
     background-color: #f2f3f4;
