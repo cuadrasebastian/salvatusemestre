@@ -1,5 +1,6 @@
 /*colores: #f2f3f4 plomo
-#fcdc14 amarillo*/
+#fcdc14 amarillo
+#E1E2E3 footer*/
 
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&display=swap');
 
@@ -165,7 +166,7 @@ div.botonenviarcontainer{
 /*Footer*/
 
 .footer{
-    background-color: #f2f3f4;
+    background-color: #E1E2E3;
 }
 #footer{
     padding-top: 70px;
@@ -190,6 +191,10 @@ a{
     color: black;
 }
 
+.footer-columna1{
+    padding-bottom: 20px;
+}
+
 /*Blog*/
 
 #blog{
@@ -208,4 +213,14 @@ div#blog-dentro{
 
 .card-blog{
     background-color: #f2f3f4;
+}
+
+/*Ensayos*/
+div#pagina1-ensayos{
+    padding-top: 70px;
+}
+
+div#cuerpo-ensayos{
+    background-color: #f2f3f4;
+    padding-bottom: 50px;
 }
