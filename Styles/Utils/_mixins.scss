@@ -1,0 +1,12 @@
+@mixin boton-amarillo(){
+    color: rgb(0, 0, 0);
+    background-color: $color-01;
+    border-radius: 4px;
+}
+
+@mixin boton-plomo(){
+    color: black;
+    background-color: $color-02;
+    border: rgb(0, 0, 0) 1px solid;
+    border-radius: 4px;
+}

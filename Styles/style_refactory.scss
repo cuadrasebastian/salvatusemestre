@@ -1,14 +1,14 @@
-/*colores: #f2f3f4 plomo
-#fcdc14 amarillo
-#E1E2E3 footer*/
-
 @import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400&display=swap');
+@import './Utils/functions';
+@import './Utils/mixins';
+@import './Utils/variables';
 
+/*Generales*/
 *{
     font-family: 'Readex Pro', sans-serif;
 }
 
-h1{
+h1, .navbar-brand{
     font-weight: 400;
 }
 
@@ -16,20 +16,12 @@ h1{
     font-weight: 300;
 }
 
-/*Navbar brand*/
-
 .active-nav{
-    color: black;
-    background-color: #fcdc14;
-    border-radius: 4px;
-}
-
-.navbar-brand{
-    font-weight: 400;
+    @include boton-amarillo;
 }
 
 .navbar{
-    background-color: #f2f3f4;
+    background-color: $color-02;
 }
 
 li a{
@@ -37,9 +29,7 @@ li a{
 }
 
 li a:hover, #cotiza-aqui-navbar{
-    color: black;
-    background-color: #fcdc14;
-    border-radius: 4px;
+    @include boton-amarillo;
 }
 
 #cotiza-aqui-navbar{
@@ -55,7 +45,7 @@ a.navbar-brand{
 }
 
 div.dropdown-menu.show{
-    background-color: #f2f3f4;
+    background-color: $color-02;
 }
 
 a.dropdown-item{
@@ -72,10 +62,8 @@ a.dropdown-item:hover{
 }
 
 /*Página 1*/
-
-
 #pagina1{
-    background-color: #f2f3f4;
+    background-color: $color-02;
     padding-top: 20px;
     padding-bottom: 30px;
 }
@@ -85,16 +73,12 @@ a.dropdown-item:hover{
 }
 
 .btn-cotiza-aqui, .btn-como-funcionamos{
-    border: rgb(0, 0, 0) 1px solid;
-    border-radius: 4px;
+    @include boton-plomo;
+        &:hover{
+            @include boton-amarillo;
+            border: $color-02 1px solid;
+        }
 }
-
-.btn-cotiza-aqui:hover, .btn-como-funcionamos:hover{
-    background-color: #fcdc14;
-    border: none;
-    border: #f2f3f4 1px solid;
-}
-
 
 /*Nuestros numeros*/
 #nuestros-numeros-1, .card-nuestros-numeros{
@@ -110,14 +94,11 @@ a.dropdown-item:hover{
 }
 
 .btn-nn{
-border: black 1px solid;
-border-radius: 4px;
-background-color: #f2f3f4;
-}
-
-.btn-nn:hover{background-color: #fcdc14;
-    border: none;
-    border: #f2f3f4 1px solid;
+    @include boton-plomo;
+    &:hover{
+        @include boton-amarillo;
+        border: $color-02 1px solid;
+    }
 }
 
 div.card-deck{
@@ -131,42 +112,35 @@ div.card-deck{
 }
 
 #como-funcionamos-1{
-    background-color: #f2f3f4;
+    background-color: $color-02;
 }
 
 /*Formulario*/
 .formulario-cotizar{
-    background-color: #fcdc14;
+    background-color: $color-01;
     padding-top: 70px;
     padding-bottom: 70px;
 }
 
 .botonEnviar, .btn-cerrar{
-    border: black 1px solid;
-    border-radius: 4px;
-    background-color: #f2f3f4;
-}
-
-.btn-cerrar:hover, .botonEnviar:hover{
-    background-color: #fcdc14;
-    border: none;
-    border: #f2f3f4 1px solid;
+    @include boton-plomo;
+    &:hover{
+        @include boton-amarillo;
+        border: $color-02 1px solid;
+    }
 }
 
 .modal-content{
-    background-color: #f2f3f4;
+    background-color: $color-02;
 }
 
 div.botonenviarcontainer{
     padding-left: 0px;
 }
 
-
-
 /*Footer*/
-
 .footer{
-    background-color: #E1E2E3;
+    background-color: $color-03;
 }
 #footer{
     padding-top: 70px;
@@ -182,7 +156,7 @@ a{
 }
 
 .link-footer:hover{
-    background-color: #fcdc14;
+    background-color: $color-01;
     color: black;
     text-decoration: none;
 }
@@ -196,9 +170,8 @@ a{
 }
 
 /*Blog*/
-
 #blog{
-    background-color: #f2f3f4;
+    background-color: $color-02;
 }
 
 div#blog-dentro{
@@ -212,7 +185,7 @@ div#blog-dentro{
 }
 
 .card-blog{
-    background-color: #f2f3f4;
+    background-color: $color-02;
 }
 
 /*Ensayos*/
@@ -221,6 +194,6 @@ div#pagina1-ensayos{
 }
 
 div#cuerpo-ensayos{
-    background-color: #f2f3f4;
+    background-color: $color-02;
     padding-bottom: 50px;
 }
